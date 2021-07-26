@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <script>
+    function detect() {
+      p = prompt("Enter code: ")
+      if (p.length != 9) {
+        alert("Incorrect code");
+      }
+      d = ;
+      if ((parseInt(p) % (window.outerHeight - window.innerHeight)) == 101) {
+        document.getElementById("result").innerHTML = "DETECTED";
+        document.getElementById("result").style.color = "red";
+      }
+      else {
+        document.getElementById("result").innerHTML = "NOT DETECTED";
+        document.getElementById("result").style.color = "green";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Detection Status: <span onload="detect();" style="color: yellow;" id="result">PENDING</span></h1>
+  </body>
+</html>
